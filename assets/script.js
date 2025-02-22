@@ -8,3 +8,4 @@ menuToggle.addEventListener('click', () => {
     const spans = menuToggle.querySelectorAll('span');
     spans.forEach(span => span.classList.toggle('active'));
 });
+
