@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .header {
+        height: 70px;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo img {
+        height: 10em;  /* Increased from 35px for better visibility */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Rest of the mobile styles remain the same */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        gap: 1rem;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .main-content {
+        margin-top: 70px;
+    }
+}
