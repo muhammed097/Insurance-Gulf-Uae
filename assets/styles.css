@@ -397,36 +397,40 @@ body {
     line-height: 1.6;
 }
 
-/* Footer Styles */
 .footer {
-    padding: 1.5rem 2rem;
     background-color: #f8f8f8;
+    padding: 2rem;
     border-top: 1px solid #e2e8f0;
 }
 
 .footer-container {
     max-width: 1400px;
     margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
 }
 
-.copyright {
-    color: #666;
+.footer-text {
+    color: #4A4A4A;
     font-size: 0.875rem;
-    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
-.powered-by {
+.footer-right {
+    text-align: right;
     color: #666;
     font-size: 0.875rem;
 }
 
 .footer-link {
-    color: #2196F3;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-link:hover {
     color: #1976D2;
+    text-decoration: underline;
 }
